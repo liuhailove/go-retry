@@ -1,18 +1,18 @@
 
 案例：
-func TestRetryTemplateBuilder(t *testing.T) {
-	var retryTemplate = NewRetryTemplateBuilder().
-		MaxAttemptsRtyPolicy(5).
-		//FixedBackoff(1000).
-		//ExponentialBackoffWithRandom(1000, 2, 5000, true).
-		//WithinMillisRtyPolicy(1000).
-		//InfiniteRtyPolicy().
-		UniformRandomBackoff(100, 1000).
-		//NotRetryOn(errors.New("error")).
-		RetryOn(errors.New("hello world")).
-		RetryOn(errors.New("error")).
-		WithErrorMatchPattern(classify.RegularMatch).
-		Build()
+func TestRetryTemplateBuilder(t *testing.T) {  
+	var retryTemplate = NewRetryTemplateBuilder().  
+		MaxAttemptsRtyPolicy(5).  
+		//FixedBackoff(1000).  
+		//ExponentialBackoffWithRandom(1000, 2, 5000, true).  
+		//WithinMillisRtyPolicy(1000).  
+		//InfiniteRtyPolicy().  
+		UniformRandomBackoff(100, 1000).  
+		//NotRetryOn(errors.New("error")).  
+		RetryOn(errors.New("hello world")).  
+		RetryOn(errors.New("error")).  
+		WithErrorMatchPattern(classify.RegularMatch).  
+		Build()  
 
 	var result, err = retryTemplate.Execute(&MyTestRetryCallback{})
 	if err == nil {
@@ -23,31 +23,31 @@ func TestRetryTemplateBuilder(t *testing.T) {
 
 }
 
-type MyTestRetryCallback struct {
+type MyTestRetryCallback struct {  
 }
 
-func (m MyTestRetryCallback) DoWithRetry(content retry.RtyContext) interface{} {
-	fmt.Println(content.GetRetryCount())
-	var result, err = PrintHello()
-	if err != nil {
-		panic(err.Error())
-	}
-	return result
+func (m MyTestRetryCallback) DoWithRetry(content retry.RtyContext) interface{} {  
+	fmt.Println(content.GetRetryCount())  
+	var result, err = PrintHello()  
+	if err != nil {  
+		panic(err.Error())  
+	}  
+	return result  
 }
 
 var i = 0
 
-func PrintHello() (string, error) {
-	if i < 2 {
-		i++
-		if i == 1 {
-			panic("error")
-		}
-		util.Sleep(time.Millisecond * 100)
-		fmt.Println("PrintHello error")
-		return "", errors.New("error")
-	} else {
-		//fmt.Println("hello")
-		return "hello world", nil
-	}
-}
+func PrintHello() (string, error) {  
+	if i < 2 {  
+		i++  
+		if i == 1 {  
+			panic("error")  
+		}  
+		util.Sleep(time.Millisecond * 100)  
+		fmt.Println("PrintHello error")  
+		return "", errors.New("error")  
+	} else {  
+		//fmt.Println("hello")  
+		return "hello world", nil  
+	}  
+}   
