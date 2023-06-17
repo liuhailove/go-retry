@@ -221,7 +221,7 @@ func (r *RetryTemplate) handleRetryExhausted(callback retry.RecoverCallback, ctx
 	} else {
 		err = ctx.GetLastError()
 	}
-	return nil, errors.New(err.Error())
+	return nil, err
 }
 
 // shouldRethrow 是一个扩展点，对于子类捕或到异常后，可以决定是否继续抛出异常。一般来说，无状态的行为不需要继续抛出异常，有状态的需要抛出
