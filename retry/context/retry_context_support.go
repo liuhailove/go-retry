@@ -2,7 +2,7 @@ package context
 
 import (
 	"fmt"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry"
 )
 
 type RtyContextSupport struct {

@@ -1,8 +1,8 @@
 package policy
 
-import "git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
+import "github.com/liuhailove/go-retry/retry"
 
-//RtyContextCache 上下文重试cache
+// RtyContextCache 上下文重试cache
 type RtyContextCache interface {
 
 	// Get 根据key获取重试上下文

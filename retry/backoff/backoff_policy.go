@@ -1,6 +1,6 @@
 package backoff
 
-import "git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
+import "github.com/liuhailove/go-retry/retry"
 
 // BackOffPolicy 回退策略，控制两次重试之间的回退策略.
 type BackOffPolicy interface {

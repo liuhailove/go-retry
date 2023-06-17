@@ -2,11 +2,11 @@ package support
 
 import (
 	"errors"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/logging"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/backoff"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/policy"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/util"
+	"github.com/liuhailove/go-retry/logging"
+	"github.com/liuhailove/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry/backoff"
+	"github.com/liuhailove/go-retry/retry/policy"
+	"github.com/liuhailove/go-retry/util"
 )
 
 const (

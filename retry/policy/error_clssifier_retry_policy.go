@@ -1,9 +1,9 @@
 package policy
 
 import (
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/classify"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/context"
+	"github.com/liuhailove/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry/classify"
+	"github.com/liuhailove/go-retry/retry/context"
 )
 
 type ErrorClassifierRetryPolicy struct {

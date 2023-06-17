@@ -3,9 +3,9 @@ package support
 import (
 	"errors"
 	"fmt"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/classify"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/util"
+	"github.com/liuhailove/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry/classify"
+	"github.com/liuhailove/go-retry/util"
 	"testing"
 	"time"
 )

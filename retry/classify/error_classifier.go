@@ -1,7 +1,7 @@
 package classify
 
 import (
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/logging"
+	"github.com/liuhailove/go-retry/logging"
 	"regexp"
 	"strings"
 )

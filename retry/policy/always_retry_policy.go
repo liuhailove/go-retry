@@ -1,6 +1,6 @@
 package policy
 
-import "git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
+import "github.com/liuhailove/go-retry/retry"
 
 // AlwaysRetryPolicy 一种无穷重试策略
 type AlwaysRetryPolicy struct {

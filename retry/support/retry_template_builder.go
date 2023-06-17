@@ -2,10 +2,10 @@ package support
 
 import (
 	"errors"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/backoff"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/classify"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/policy"
+	"github.com/liuhailove/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry/backoff"
+	"github.com/liuhailove/go-retry/retry/classify"
+	"github.com/liuhailove/go-retry/retry/policy"
 )
 
 // * Fluent API to configure new instance of RetryTemplate. For detailed description of each

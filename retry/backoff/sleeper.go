@@ -1,7 +1,7 @@
 package backoff
 
 import (
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/util"
+	"github.com/liuhailove/go-retry/util"
 	"time"
 )
 

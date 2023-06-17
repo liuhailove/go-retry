@@ -1,8 +1,8 @@
 package backoff
 
 import (
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/logging"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
+	"github.com/liuhailove/go-retry/logging"
+	"github.com/liuhailove/go-retry/retry"
 	"strconv"
 	"sync"
 )

@@ -1,9 +1,9 @@
 package policy
 
 import (
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/retry/context"
-	"git.garena.com/shopee/loan-service/credit_backend/fast-escrow/go-retry/util"
+	"github.com/liuhailove/go-retry/retry"
+	"github.com/liuhailove/go-retry/retry/context"
+	"github.com/liuhailove/go-retry/util"
 )
 
 var (
